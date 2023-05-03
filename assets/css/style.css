@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: goldenrod;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -57,7 +57,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2eafec;
+  background: green;
   color: #fff;
 }
 
@@ -79,7 +79,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #fff;
   overflow-y: auto;
 }
 
@@ -87,7 +87,7 @@ h6 {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid #2c2f3f;
+  border: 4px solid goldenrod;
 }
 
 #header .profile h1 {
@@ -109,7 +109,7 @@ h6 {
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
+  background: goldenrod;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -122,7 +122,7 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: green;
   color: #fff;
   text-decoration: none;
 }
@@ -164,7 +164,7 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #a8a9b4;
+  color: gray;
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -183,7 +183,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   text-decoration: none;
-  color: #fff;
+  color: gray;
 }
 
 .nav-menu a:hover i,
@@ -282,7 +282,12 @@ h6 {
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
+    text-align: center;
     line-height: 36px;
+  }
+
+  #hero p{
+    font-size: 20px;
   }
 
   #hero h2 {
@@ -311,7 +316,7 @@ section {
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  background-color: #0e2442;
+  background-color: goldenrod;
   display: inline-block;
   color: white;
   padding: 10px 50px;
@@ -321,12 +326,12 @@ section {
 }
 
 .section-title h2::after {
-  background-color: #0e2442;
+  background-color: goldenrod;
     content: "";
     position: absolute;
     top: 100%;
     left: 0;
-    border: 5px solid #0e2442;
+    border: 5px solid goldenrod;
     border-bottom: 5px solid #fff;
     border-left: 5px solid #fff;
 }
@@ -341,7 +346,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: green;
 }
 
 .about .content ul {
@@ -370,57 +375,13 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts {
-  padding-bottom: 30px;
-}
+@media (max-width: 768px) {
+  .about .content ul strong, .about .content ul span{
+    font-size: 12px;
+  }
 
-.facts .count-box {
-  padding: 30px;
-  width: 100%;
+  
 }
-
-.facts .count-box i {
-  display: block;
-  font-size: 44px;
-  color: #149ddd;
-  float: left;
-  line-height: 0;
-}
-
-.facts .count-box span {
-  font-size: 48px;
-  line-height: 40px;
-  display: block;
-  font-weight: 700;
-  color: #050d18;
-  margin-left: 60px;
-}
-
-.facts .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #122f57;
-}
-
-.facts .count-box a {
-  font-weight: 600;
-  display: block;
-  margin-top: 20px;
-  color: #122f57;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
-}
-
-.facts .count-box a:hover {
-  color: #1f5297;
-}
-
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
@@ -455,7 +416,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: green;
 }
 
 /*--------------------------------------------------------------
@@ -466,7 +427,7 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: green;
 }
 
 .resume .resume-item {
@@ -482,7 +443,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: goldenrod;
   margin-bottom: 10px;
 }
 
@@ -699,10 +660,9 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: green;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
 }
 
 .services .icon i {
@@ -716,7 +676,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: goldenrod;
 }
 
 .services .title {
@@ -727,11 +687,11 @@ section {
 }
 
 .services .title a {
-  color: #343a40;
+  color: goldenrod;
 }
 
 .services .title a:hover {
-  color: #149ddd;
+  color: green;
 }
 
 .services .description {
@@ -825,11 +785,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid goldenrod;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: goldenrod;
 }
 
 /*--------------------------------------------------------------
@@ -994,7 +954,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #149ddd;
+  background: goldenrod;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1063,36 +1023,4 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
-  padding: 15px;
-  color: #f4f6fd;
-  font-size: 14px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  z-index: 9999;
-  background: #040b14;
-}
 
-#footer .copyright {
-  text-align: center;
-}
-
-#footer .credits {
-  padding-top: 5px;
-  text-align: center;
-  font-size: 13px;
-  color: #eaebf0;
-}
-
-@media (max-width: 1199px) {
-  #footer {
-    position: static;
-    width: auto;
-    padding-right: 20px 15px;
-  }
-}
