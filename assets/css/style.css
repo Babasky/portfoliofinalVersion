@@ -194,7 +194,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #149ddd;
+  color: var(--main-color);
 }
 
 /* Mobile Navigation */
