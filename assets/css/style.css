@@ -1,10 +1,3 @@
-/**
-* Template Name: iPortfolio
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -19,7 +12,7 @@ body {
 }
 
 a {
-  color: #149ddd;
+  color: var(--main-color);
   text-decoration: none;
 }
 
@@ -228,9 +221,9 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# home Section
 --------------------------------------------------------------*/
-#hero {
+#home {
   width: 100%;
   height: 100vh;
   background: url("../img/home.jpg") top center;
@@ -238,9 +231,9 @@ h6 {
   position: relative;
 }
 
-#hero:before {
+#home:before {
   content: "";
-  background: rgba(5, 13, 24, 0.6);
+  background: rgba(5, 13, 24, 0.3);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -249,37 +242,39 @@ h6 {
   z-index: 1;
 }
 
-#hero .hero-container {
+#home .home-container {
   position: relative;
   z-index: 2;
   min-width: 300px;
 }
 
-#hero h1 {
+#home h1 {
   margin: 0 0 10px 0;
   font-size: 54px;
   font-weight: 700;
   line-height: 56px;
   text-align: center;
-  color: #fff;
+  color: var(--main-color);
 }
 
-#hero p {
-  color: whitesmoke;
+#home p {
+  color: green;
   margin-bottom: 50px;
   font-size: 26px;
   text-align: center;
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
-#hero p span {
-  color: whitesmoke;
+#home p span {
+  color: var(--main-color);
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid var(--main-color);
+  font-weight: 700;
 }
 
-#hero .bi-gear{
+#home .bi-gear{
   position: fixed;
   background-color: white;
   font-size: 2rem;
@@ -293,7 +288,7 @@ h6 {
   cursor: pointer;
 }
 
-#hero .theme-color{
+#home .theme-color{
   position: fixed;
   right: 40px;
   background-color: whitesmoke;
@@ -304,7 +299,7 @@ h6 {
   transition: ease-in-out 5s linear;
 
 }
-#hero .theme-color div{
+#home .theme-color div{
   margin: 10px auto;
   width: 40px;
   height: 40px;
@@ -314,28 +309,28 @@ h6 {
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #home {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
+  #home h1 {
     font-size: 24px;
     text-align: center;
     line-height: 36px;
   }
 
-  #hero p{
+  #home p{
     font-size: 18px;
   }
 
-  #hero h2 {
+  #home h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
-  #hero .theme-color{
+  #home .theme-color{
     width: 50px;
   }
 }
@@ -903,14 +898,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: var(--main-color);
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: var(--main-color);
   color: #fff;
 }
 
@@ -955,24 +950,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
 
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
-}
 
 .contact .php-email-form .form-group {
   margin-bottom: 15px;
@@ -995,6 +973,7 @@ section {
 
 .contact .php-email-form textarea {
   padding: 10px 15px;
+  resize: none;
 }
 
 .contact .php-email-form button[type=submit] {
@@ -1007,7 +986,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #37b3ed;
+  background: green;
 }
 
 @keyframes animate-loading {

@@ -1,6 +1,6 @@
 let themes = document.querySelectorAll('.theme-color div')
 let setting = document.querySelector('#theme-icon')
-let params = document.querySelector("#hero .theme-color")
+let params = document.querySelector("#home .theme-color")
 
 setting.onclick = (ev)=>{
     if (params.style.display == 'none') {
