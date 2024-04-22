@@ -8,6 +8,8 @@
   <title>Portfolio | Boureima</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="manifest.json">
 
 
   <!-- Google Fonts -->
@@ -20,6 +22,7 @@
   <link href="assets/library/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/library/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/library/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/img/icons/512.png" type="image/x-icon">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -571,5 +574,13 @@
  
 
 </body>
-
+<script>
+  if("serviceWorker" in navigator){
+    window.addEventListener("load", ()=>{
+      navigator.serviceWorker.register("/sw.js").then(()=>{
+        console.log("service is load");
+      })
+    })
+  }
+</script>
 </html>
