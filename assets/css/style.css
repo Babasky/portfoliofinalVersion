@@ -364,7 +364,6 @@ section {
   color: white;
   padding: 10px 50px;
   position: relative;
-  position: relative;
   color: #fff;
 }
 
@@ -836,6 +835,9 @@ section {
   background-color: var(--main-color);
 }
 
+.testimonials .testimonials-slider{
+  margin-left: -70px;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -844,7 +846,7 @@ section {
 }
 
 .contact #contact-container{
-  margin-left: 80px;
+  margin-left: px;
 }
 
 .contact .info {
